@@ -4,26 +4,26 @@ class BoardCase
 
   def initialize (coordonate)
     @coords = coordonate
-    @status = "empty"
+    @status = " "
   end
 
   #demande si la case est vide ou pas
   def is_empty?
-    if @status == "empty"
+    if @status == " "
       return true
     else
       return false
     #rajouer une condition pour un message d'erreur, reselectionner la case?
+      end
     end
-  end
-end
 
   #demande si la case entrée existe ou pas
-#  def exists?
-#    if #case rentrée == coords
-#      return true
-#    end
-#  end
+  #def exists?
+  #  if @value == @coords
+  #    return true
+  #  end
+  #end
+end
 
 
   #def board_case_selected

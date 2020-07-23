@@ -1,13 +1,18 @@
 require 'bundler' #eviter de require les gems
+require 'pry'
 Bundler.require #eviter de require les gems
 $:.unshift File.expand_path("./../lib/app", __FILE__)
 require 'boardcase'
 require 'board'
 require 'game'
 require 'player'
+require 'show'
 
+Game.new #à chaque nouveau tir on lance un nouveau prout
 
 binding.pry
+
+
 #MyClass.new.perform #appeler la classe qui m'intéresse
 
 #require 'lib/app/' #appeler le fichier qui m'intéresse
