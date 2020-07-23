@@ -1,9 +1,9 @@
 class BoardCase
 
-  attr_accessor :coords, :status,
+  attr_accessor :coords, :status
 
-  def initialize (coords)
-    @coords = coords.to_s
+  def initialize (coordonate)
+    @coords = coordonate
     @status = "empty"
   end
 
@@ -16,21 +16,19 @@ class BoardCase
     #rajouer une condition pour un message d'erreur, reselectionner la case?
     end
   end
+end
 
-=begin
   #demande si la case entrée existe ou pas
-  def exists?
-    if #case rentrée == coords
-      return true
-    end
-  end
-  =end
+#  def exists?
+#    if #case rentrée == coords
+#      return true
+#    end
+#  end
 
-  def board_case_selected
+
+  #def board_case_selected
     #if playerturn = player 1
     # return @status = "X"
     #if playerturn = player 2
     # return @status = "O"
-  end
-
-end
+  #end
