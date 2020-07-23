@@ -1,17 +1,19 @@
 require 'bundler' #eviter de require les gems
 Bundler.require #eviter de require les gems
-:.unshift File.expand_path("./../lib", __FILE__)
+$:.unshift File.expand_path("./../lib/app", __FILE__)
+require 'boardcase'
+require 'board'
 
-MyClass.new.perform #appeler la classe qui m'intéresse
+#MyClass.new.perform #appeler la classe qui m'intéresse
 
-require 'lib/app/game' #appeler le fichier qui m'intéresse
-require 'lib/app/app_two' #appeler le fichier qui m'intéresse
-
-
-
-
+#require 'lib/app/' #appeler le fichier qui m'intéresse
+#require 'lib/app/app_two' #appeler le fichier qui m'intéresse
 
 
+
+
+
+=begin
 4 classes qui correspondent à des objets qu'on va manipuler pour faire tourner le jeu :
 
 Game : c'est le jeu. Elle initialise tout, lance une partie (qui se termine avec une victoire ou un nul), permet de jouer un tour, de chercher si la partie est finie, etc.
@@ -43,3 +45,4 @@ Application : cette classe va nous permettre de lancer le jeu. Elle va faire une
 
 Show : cette classe sera une sorte de view. Elle affichera l'état du plateau de jeu à un instant T.
 --------------------------------------
+=end

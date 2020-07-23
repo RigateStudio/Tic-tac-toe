@@ -28,17 +28,21 @@ class Game
 
   #
   def game_turn
-
+    while != is_it_still_going =! nil
+    return true
+    puts "Le jeu commence"
+    # propose a chaque joueur de selectionner des cases. On fera a la classe boardcase et show. Une boucle while englobera la
   end
 
   #
   def is_it_still_going?
-
+    if @boardcase_array  =
+    # Cette fonction nous dit si on a une combinaison de trois board case rempli
   end
 
   #
   def end_of_the_game
-
+    # Cette fonction nous donne le nom du joueur qui a gagné, nous donne le score et nous propose de rejouer une partie
   end
 
 end
